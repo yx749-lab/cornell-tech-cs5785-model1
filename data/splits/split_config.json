@@ -1,0 +1,39 @@
+{
+  "split_id": "sklearn_stratified_seed42_v2",
+  "source_train_sha256": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+  "algorithm": "sklearn.model_selection.train_test_split on train.csv ORIGINAL file order; test_size=0.2, random_state=42, stratify=label, shuffle=True. Preserve returned row order.",
+  "sklearn_version": "1.9.1",
+  "seed": 42,
+  "status": "Matches user-approved teammate prompt and specified sklearn implementation; teammate actual saved IDs not independently obtained.",
+  "train_counts": {
+    "0": 4000,
+    "1": 4000
+  },
+  "validation_counts": {
+    "0": 1000,
+    "1": 1000
+  },
+  "starter_rows_in_train": 1614,
+  "starter_rows_in_validation": 386,
+  "files": {
+    "train_8000.csv": {
+      "sha256": "59648b9c2c07632ae161ded5a622b0d89e5239fc2cf3d92535220d6f75547d7f"
+    },
+    "validation_2000.csv": {
+      "sha256": "1420c0b0e44888b7417da66673c7c977bc87ac74a3b47748b3ea14294866ff1c"
+    },
+    "train_ids.csv": {
+      "sha256": "4cb8013eb315c269e812e87516f29f9e2c5439f491b00a9c7b2887404a29e994"
+    },
+    "validation_ids.csv": {
+      "sha256": "561deade0fea24d9781b2f1089fd4923e824ef14a654ea54f0832d5ff58e0e8f"
+    }
+  },
+  "archived_split": "data/splits_archive/stratified_seed42_v1",
+  "verified": {
+    "id_disjoint": true,
+    "full_train_coverage": true,
+    "class_balance": true,
+    "original_rows_preserved": true
+  }
+}
