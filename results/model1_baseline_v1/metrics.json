@@ -1,0 +1,104 @@
+{
+  "run_id": "model1_baseline_v1",
+  "created_at": "2026-11-08T22:32:00.305140-05:00",
+  "split_id": "sklearn_stratified_seed42_v2",
+  "parameters": {
+    "tfidf": {
+      "analyzer": "word",
+      "ngram_range": [
+        1,
+        2
+      ],
+      "lowercase": true,
+      "token_pattern": "(?u)\\b\\w\\w+\\b",
+      "stop_words": null,
+      "min_df": 2,
+      "max_df": 1.0,
+      "max_features": 50000,
+      "sublinear_tf": true,
+      "norm": "l2",
+      "use_idf": true,
+      "smooth_idf": true
+    },
+    "classifier": {
+      "C": 1.0,
+      "l1_ratio": 0.0,
+      "solver": "lbfgs",
+      "max_iter": 1000,
+      "tol": 0.0001,
+      "random_state": 42
+    },
+    "decision_threshold": 0.5,
+    "thread_limit": 1
+  },
+  "train": {
+    "rows": 8000,
+    "auroc": 0.9931939375000001,
+    "accuracy_at_0_5": 0.95175,
+    "f1_ai_at_0_5": 0.9501034126163392,
+    "confusion_matrix_true_rows_predicted_columns": [
+      [
+        3939,
+        61
+      ],
+      [
+        325,
+        3675
+      ]
+    ]
+  },
+  "validation": {
+    "rows": 2000,
+    "auroc": 0.9360660000000001,
+    "accuracy_at_0_5": 0.867,
+    "f1_ai_at_0_5": 0.859704641350211,
+    "confusion_matrix_true_rows_predicted_columns": [
+      [
+        919,
+        81
+      ],
+      [
+        185,
+        815
+      ]
+    ]
+  },
+  "fit_seconds_including_tfidf": 2.1491640409994943,
+  "train_prediction_seconds": 0.9190651669996441,
+  "validation_prediction_seconds": 0.2312135419997503,
+  "feature_count": 50000,
+  "solver_iterations": [
+    15
+  ],
+  "warnings": [],
+  "checks": {
+    "split_hashes_verified": true,
+    "raw_train_hash_verified": true,
+    "disjoint_ids": true,
+    "training_only_pipeline_fit": true,
+    "probabilities_valid": true,
+    "saved_model_reload_predictions_match": true
+  },
+  "source_hashes": {
+    "train_csv": "325e345faf88fb1c4203278098c282e40319a87b4bf17e094d2f235f51d0c07e",
+    "split_config": "1b66b8e916b16ac1dcbb24934957f73da07d3a454f34a536185598ae26b7305d",
+    "training_script": "55f0d3d238844205b120d156267a59c00ff2c7b533177c3e99fcc55641469d52",
+    "dependency_lock": "5ac3f510c71a5531521373f3332c12d425e5c924a0ef0f9f0999650f64a960de"
+  },
+  "environment": {
+    "python": "3.12.6",
+    "versions": {
+      "scikit-learn": "1.9.1",
+      "numpy": "2.3.5",
+      "scipy": "1.18.1",
+      "pandas": "3.1.1",
+      "joblib": "1.6.0",
+      "matplotlib": "3.11.2"
+    }
+  },
+  "model_path": "models/model1_baseline_v1.joblib",
+  "test_data_used": false,
+  "unlabeled_data_used": false,
+  "hyperparameter_search_performed": false,
+  "limitation": "One holdout split and one untuned baseline; no Kaggle score or calibration claim."
+}
