@@ -1,0 +1,98 @@
+{
+  "package": "Model1_GitHub_Public_v1",
+  "baseline": "model1_baseline_v1",
+  "split": "sklearn_stratified_seed42_v2",
+  "data_source": "https://www.kaggle.com/competitions/cornell-tech-cs-5785-combined-2026-ai-vs-human-text/data",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 127,
+      "sha256": "8b658bbdba055f759b94cf90bcaa1f515ec677d60a34c547c59d6587520d7952",
+      "role": "instructions_or_environment"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5199,
+      "sha256": "1ac8d252eb233c92bb8b4c2c8f557dca6622d330049315ed2207f65cc5644f98",
+      "role": "instructions_or_environment"
+    },
+    {
+      "path": "REFERENCE_MANIFEST.json",
+      "bytes": 3907,
+      "sha256": "eca3c69f086df9816a62960eeb999021084133691ebca273dd9b5c13e6c4741b",
+      "role": "instructions_or_environment"
+    },
+    {
+      "path": "data/splits/split_config.json",
+      "bytes": 1385,
+      "sha256": "1b66b8e916b16ac1dcbb24934957f73da07d3a454f34a536185598ae26b7305d",
+      "role": "data"
+    },
+    {
+      "path": "models/model1_baseline_v1.joblib",
+      "bytes": 979178,
+      "sha256": "49ade83c680da793dd65afda1bb7418466b4d5ad3e04be175b84cebb3959483a",
+      "role": "models"
+    },
+    {
+      "path": "requirements.lock.txt",
+      "bytes": 305,
+      "sha256": "5ac3f510c71a5531521373f3332c12d425e5c924a0ef0f9f0999650f64a960de",
+      "role": "instructions_or_environment"
+    },
+    {
+      "path": "results/model1_baseline_v1/metrics.csv",
+      "bytes": 166,
+      "sha256": "df00a63d6f3dd709685e2be4973a2e98a66b7178f1d42c68cb7601c15c3abae6",
+      "role": "results"
+    },
+    {
+      "path": "results/model1_baseline_v1/metrics.json",
+      "bytes": 2648,
+      "sha256": "71868ae57ca7b5dd547e6cef0c942f202e7dc33a983e82d354fd889d6cd7a7be",
+      "role": "results"
+    },
+    {
+      "path": "results/model1_baseline_v1/selected_feature_weights.csv",
+      "bytes": 1076,
+      "sha256": "61afc1b3509f782059a2e145ecebba6fbbfdb6c19902b544ab3c131c293f702a",
+      "role": "results"
+    },
+    {
+      "path": "results/model1_baseline_v1/validation_summary.png",
+      "bytes": 83079,
+      "sha256": "ef2f2d99f02a0427d9ac3969d4e1654d91c43fed957377f00096234b09fe5a75",
+      "role": "results"
+    },
+    {
+      "path": "src/prepare_data.py",
+      "bytes": 2996,
+      "sha256": "9ae70b57009593ddc45cf08743c1d076e3e7aeba6cd790f378bb34e1c1aa7981",
+      "role": "src"
+    },
+    {
+      "path": "src/reproduce_baseline.py",
+      "bytes": 2439,
+      "sha256": "93072b396aa53d75d2f9d6a656f240882205da3705d34639335009b55c936d85",
+      "role": "src"
+    },
+    {
+      "path": "src/train_baseline.py",
+      "bytes": 6978,
+      "sha256": "55f0d3d238844205b120d156267a59c00ff2c7b533177c3e99fcc55641469d52",
+      "role": "src"
+    },
+    {
+      "path": "src/verify_model1.py",
+      "bytes": 3256,
+      "sha256": "6b81bf692df9e87ba52b9fdd19f187c83679dc266d04b5f400f5db4616ff7840",
+      "role": "src"
+    },
+    {
+      "path": "src/verify_package.py",
+      "bytes": 796,
+      "sha256": "3db7ff8712501ab8c26a842e3f9c48ec458e8617785b77a184f83bedf161fcf9",
+      "role": "src"
+    }
+  ]
+}
